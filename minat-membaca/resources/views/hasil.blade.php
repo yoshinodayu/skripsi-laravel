@@ -13,7 +13,7 @@
 <div class="bgg container-fluid m-0 p-5 row" style="background-color: #EFEEF4; height:400px;">
     <div class="col-sm-12 mt-5" style="display:flex; justify-content:center; align-items:center;">
         <div class="pb-5">
-            <h1 class="text-dark">Hasil</h1>
+            <h1 class="text-dark">Hasil {{ $loop }}</h1>
         </div>
     </div>
 </div>

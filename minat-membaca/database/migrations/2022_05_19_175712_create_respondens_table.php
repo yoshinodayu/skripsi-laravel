@@ -14,7 +14,7 @@ class CreateRespondensTable extends Migration
     public function up()
     {
         Schema::create('respondens', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->text('nama_lengkap');
             $table->string('usia', 60);
             $table->text('status');

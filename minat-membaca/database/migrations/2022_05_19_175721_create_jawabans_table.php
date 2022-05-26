@@ -14,7 +14,8 @@ class CreateJawabansTable extends Migration
     public function up()
     {
         Schema::create('jawabans', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
+            $table->foreignId('identitas_id');
             $table->biginteger('p1');
             $table->biginteger('p2');
             $table->biginteger('p3');

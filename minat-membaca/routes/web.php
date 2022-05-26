@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Controller\IndikatorController;
 use App\Http\Controllers\PerhitunganController;
+use App\Http\Controllers\HasilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,10 +22,11 @@ Route::get('/beranda', function () {
     ]);
 });
 
-Route::get('/perhitungan', [PerhitunganController::class, 'index']);
-
-Route::get('/hasil', function () {
-    return view('hasil', [
-        "title" => "Hasil"
+Route::get('/kuisioner', function () {
+    return view('kuisioner', [
+        "title" => "Kuisioner"
     ]);
 });
+
+Route::get('/perhitungan', [PerhitunganController::class, 'index']);
+Route::get('/hasil', [HasilController::class, 'index']);

@@ -5,7 +5,7 @@
 <!--Introduction-->
 <div class="container-fluid m-0 p-5 row" style="background-color: #EFEEF4;">
     <div class="col-sm-4" style="align-self:center;">
-        <img src="images/Newspaper.svg" class="w-75" />
+        <img src="images/Newspaper.svg" class="w-100" />
     </div>
     <div class="col-sm-8 float-left">
         <div>
@@ -21,6 +21,7 @@
                 anak muda dalam membaca berita kurang. Dari hal ini perlu diketahui seberapa besar minat anak muda dalam membaca berita dan berita seperti
                 apa yang lebih disukai.
             </p>
+            <a href="/kuisioner" style="font-size:1.5vw; text-decoration:none;">Isi Kuisioner</a>
         </div>
     </div>
 </div>
@@ -44,24 +45,24 @@
         </div>
     </div>
     <div class="col-sm-4 mt-3 text-center" style="align-self:center;">
-        <img src="images/Announcer.svg" class="w-75" />
+        <img src="images/Announcer.svg" class="w-100" />
     </div>
 </div>
 
 <!--Manfaat Berita-->
 <div class="container-fluid m-0 p-5 row" style="background-color: #EFEEF4;">
     <div class="col-sm-4" style="align-self:center;">
-        <img src="images/Advantages.svg" class="w-75" />
+        <img src="images/Advantages.svg" class="w-100" />
     </div>
     <div class="col-sm-8 float-left">
         <div class="pr-5">
             <h2 class="text-dark">Apa Manfaat Membaca Berita ?</h2>
         </div>
         <div class="pr-5 pt-3">
-            <ul>
-                <li>
-                    <p class="font-weight-bold" style="text-align:justify; font-size:1.5vw">Menambah Wawasan</p>
-                    <p class="text-dark" style="text-align:justify; font-size:1.5vw">
+            <ul class="accordion" id="accordionExample">
+                <li class="accordion-item" style="background-color:#EFEEF4; border:none;">
+                    <a class="font-weight-bold text-dark" aria-expanded="true" style="text-align:justify; font-size:1.5vw; text-decoration:none;" data-toggle="collapse" data-target="#manfaat1">Menambah Wawasan</a>
+                    <p class="text-dark accordion-collapse collapse show" style="text-align:justify; font-size:1.5vw" id="manfaat1" class="collapse">
                         Salah satu manfaat membaca berita adalah menambah wawasan dalam berbagai
                         bidang, tergantung berita apa yang dipelajari. Dengan membaca berita juga
                         akan mendapatkan informasi terbaru seperti perkembangan di dunia bisnis,
@@ -71,9 +72,9 @@
                         bertambah kaya.
                     </p>
                 </li>
-                <li>
-                    <p class="font-weight-bold" style="text-align:justify; font-size:1.5vw">Penangkal Informasi Bohong</p>
-                    <p class="text-dark" style="text-align:justify; font-size:1.5vw">
+                <li class="accordion-item" style="background-color:#EFEEF4; border:none;">
+                    <a class="font-weight-bold text-dark" aria-expanded="false" style="text-align:justify; font-size:1.5vw; text-decoration:none;" data-toggle="collapse" data-target="#manfaat2">Penangkal Informasi Bohong</a>
+                    <p class="text-dark accordion-collapse collapse" style="text-align:justify; font-size:1.5vw" id="manfaat2" class="collapse">
                         Penelitian menemukan bahwa orang yang membaca berita adalah pembicara
                         yang lebih baik begitu pun dengan pendengar yang baik. Informasi bohong
                         atau biasa disebut <i>hoax</i> banyak terjadi di mana-mana, sehingga kita
@@ -83,17 +84,17 @@
                         tidak akan mudah tertipu oleh berita-berita palsu.
                     </p>
                 </li>
-                <li>
-                    <p class="font-weight-bold" style="text-align:justify; font-size:1.5vw">Sumber Inspirasi</p>
-                    <p class="text-dark" style="text-align:justify; font-size:1.5vw">
+                <li class="accordion-item" style="background-color:#EFEEF4; border:none;">
+                    <a class="font-weight-bold text-dark" aria-expanded="false" style="text-align:justify; font-size:1.5vw; text-decoration:none;" data-toggle="collapse" data-target="#manfaat3">Sumber Inspirasi</a>
+                    <p class="text-dark accordion-collapse collapse" style="text-align:justify; font-size:1.5vw" id="manfaat3" class="collapse">
                         Berita sangatlah baik sebagai sumber informasi dan bisa untuk sumber inspirasi
                         yang baik. Informasi berita yang menampilkan tokoh-tokoh hebat secara tidak
                         langsung bisa memotivasi hidup menjadi lebih baik.
                     </p>
                 </li>
-                <li>
-                    <p class="font-weight-bold" style="text-align:justify; font-size:1.5vw">Berita Memperlambat Penuaan</p>
-                    <p class="text-dark" style="text-align:justify; font-size:1.5vw">
+                <li class="accordion-item" style="background-color:#EFEEF4; border:none;">
+                    <a class="font-weight-bold text-dark" aria-expanded="false" style="text-align:justify; font-size:1.5vw; text-decoration:none;" data-toggle="collapse" data-target="#manfaat4">Berita Memperlambat Penuaan</a>
+                    <p class="text-dark accordion-collapse collapse" style="text-align:justify; font-size:1.5vw" id="manfaat4" class="collapse">
                         Penelitian menunjukan bahwa lansia yang membaca berita memiliki peluang 17% lebih 
                         rendah dalam proses penuaan. Saat membaca berita, sering kali memicu beberapa 
                         respons, termasuk ingatan dan emosi yang kuat dari otak. Stimulasi mental apa pun 
@@ -101,9 +102,9 @@
                         itu membantu otak manusia agar tetap fit. 
                     </p>
                 </li>
-                <li>
-                    <p class="font-weight-bold" style="text-align:justify; font-size:1.5vw">Meningkatkan Kreativitas</p>
-                    <p class="text-dark" style="text-align:justify; font-size:1.5vw">
+                <li class="accordion-item" style="background-color:#EFEEF4; border:none;">
+                    <a class="font-weight-bold text-dark" aria-expanded="false" style="text-align:justify; font-size:1.5vw; text-decoration:none;" data-toggle="collapse" data-target="#manfaat5">Meningkatkan Kreativitas</a>
+                    <p class="text-dark accordion-collapse collapse" style="text-align:justify; font-size:1.5vw" id="manfaat5" class="collapse">
                         Seiring dengan berkembangnya teknologi, isi berita bukan hanya mengenai informasi 
                         yang bersifat pemerintahan, bencana, atau pun peristiwa yang terjadi pada sebuah 
                         daerah. Berita-berita sekarang ini juga banyak memberikan informasi yang sangat 

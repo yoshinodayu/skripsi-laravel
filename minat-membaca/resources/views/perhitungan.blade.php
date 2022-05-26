@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<!--Metode-->
+<!--Metode Yang Digunakan-->
 <div class="container-fluid m-0 p-5 row">
     <div class="col-sm-12 float-left">
         <div class="pt-4">
@@ -53,13 +53,11 @@
         </div>
         <div class="pt-3">
             <p class="text-dark" style="text-align:justify">
-                Sebelum kita masuk ke dalam contoh perhitungannya, tabel di bawah ini adalah keterangan 
-                dataset pada kuisioner berdasarkan indikator yang digunakan. Di mana data yang akan 
-                digunakan dalam akan di bagi menjadi 2, yaitu data training dan data testing. 
+                Data yang akan digunakan pada perhitungan akan di bagi menjadi 2, yaitu 5 data training dan 2 data testing. Sebelum kita masuk ke dalam contoh perhitungannya, tabel di bawah ini adalah keterangan 
+                dataset pada kuisioner berdasarkan indikator yang digunakan. 
                 <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseKeterangan" role="button" aria-expanded="false" aria-controls="collapseKeterangan">
-                    Lihat Tabel
+                    Klik untuk melihat tabel indikator.
                 </a>
-</p>
             <!--tabel keterangan dataset-->
             <div class="table-responsive collapse" id="collapseKeterangan">
                 <table class="table">
@@ -74,7 +72,7 @@
                     <tbody class="table-light">
                         @foreach ($keterangans as $keterangan)
                         <tr>
-                            <td>{{ $keterangan->id }}</td>
+                            <td>{{ $keterangan->no }}</td>
                             <td>{{ $keterangan->indikator }}</td>
                             <td>{{ $keterangan->pernyataan }}</td>
                             <td>{{ $keterangan->kode }}</td>
@@ -149,9 +147,14 @@
             </table>
         </div>
     </div>
+</div>
 
-    <!--Part 3-->
+<!--Metode K-Means Clustering-->
+<div class="container-fluid m-0 p-5 row">
     <div class="col-sm-12 float-left">
+        <div class="pt-4">
+            <h2 class="text-dark">K-Means Clustering</h2>
+        </div>
         <div class="pt-3">
             <p class="text-dark" style="text-align:justify">
                 Proses pertama yang dilakukan pada penelitian ini adalah melakukan penentuan 
@@ -165,18 +168,18 @@
                 Berikut adalah tahapan pada metode K-Means Clustering :  
                 <ol>
                     <!--Step 1-->
-                    <li>
+                    <li class="pb-3">
                         Memasukkan data yang akan dikelompokkan <i>(clustering)</i>
                     </li>
 
                     <!--Step 2-->
                     <li>
-                        Menentukan nilai K sebagai jumlah <i>cluster</i> yang akan dibentuk
+                        <a>Menentukan nilai K sebagai jumlah <i>cluster</i> yang akan dibentuk</a>
+                        <p>
+                            Pada tahap ini, nilai K sebagai jumlah <i>cluster</i> yang akan dibentuk adalah 3. 
+                            C1 adalah Berminat, C2 adalah Cukup Berminat, C3 adalah Tidak Berminat. 
+                        </p>
                     </li>
-                    <p>
-                        Pada tahap ini, nilai K sebagai jumlah <i>cluster</i> yang akan dibentuk adalah 3. 
-                        C1 adalah Berminat, C2 adalah Cukup Berminat, C3 adalah Tidak Berminat. 
-                    </p>
 
                     <!--Step 3-->
                     <li>
@@ -239,14 +242,15 @@
 
                     <!--Step 4-->
                     <li>
-                        Menghitung jarak antara masing-masing data dengan pusat <i>cluster (Centroid)</i>, 
-                        dengan menggunakan persamaan <i>Euclidean Distance</i>
-                    </li>
-                    <img src="images/perhitungan/4 kmeans.PNG" class="w-10" />
-                    <p>
-                        Dan seterusnya sampai d(R5,C1), kemudian d(R1, C2) sampai d(R5,C2), dan d(R1,C3) sampai d(R5,C3).
-                        Tabel di bawah ini merukan hasil perhitungannya. 
-                    </p>
+                        <a>
+                            Menghitung jarak antara masing-masing data dengan pusat <i>cluster (Centroid)</i>, 
+                            dengan menggunakan persamaan <i>Euclidean Distance</i>
+                        </a>
+                        <img src="images/perhitungan/4 kmeans.PNG" class="w-10" />
+                        <p>
+                            Dan seterusnya sampai d(R5,C1), kemudian d(R1, C2) sampai d(R5,C2), dan d(R1,C3) sampai d(R5,C3).
+                            Tabel di bawah ini merukan hasil perhitungannya. 
+                        </p>
                         <!--tabel iterasi pertama-->
                         <div class="table-responsive">
                             <table class="table">
@@ -308,27 +312,26 @@
                                     </tbody>
                             </table>
                         </div>
+                    </li>
 
                     <!--Step 5-->
                     <li>
-                        Kelompokan setiap data berdasarkan jarak terdekat antara data dengan <i>centroid</i>nya
+                        <a>Kelompokan setiap data berdasarkan jarak terdekat antara data dengan <i>centroid</i>nya</a>
+                        <p>
+                            Pada tahap ini, dilakukan perbandingan antara C1, C2, dan C3. Dari semua perhitungan 
+                            manakah yang memiliki angka lebih kecl itulah jarak terdekatnya. bandingkan hal ini 
+                            pada semua responden yang telah dihitung sebelumnya. Jika dilihat pada data di atas, 
+                            di dapatkan kelompok data yaitu C1 (R1), C2 (R2, R3), dan C3 (R4, R5).
+                        </p>
                     </li>
-                    <p>
-                        Pada tahap ini, dilakukan perbandingan antara C1, C2, dan C3. Dari semua perhitungan 
-                        manakah yang memiliki angka lebih kecl itulah jarak terdekatnya. bandingkan hal ini 
-                        pada semua responden yang telah dihitung sebelumnya. Jika dilihat pada data di atas, 
-                        di dapatkan kelompok data yaitu C1 (R1), C2 (R2, R3), dan C3 (R4, R5).
-                    </p>
 
                     <!--Step 6-->
                     <li>
-                        Tentukan posisi pusat <i>cluster (Centroid)</i> baru (k), jika pusat <i>cluster</i> 
-                        tidak berubah, maka proses <i>cluster</i> telah selesai. Jika belum, maka ulang langkah 
-                        keempat sampai pusat <i>cluster (Centroid)</i> tidak berubah lagi. 
-                    </li>
-                    <p>
-                        Tabel di bawah ini merupakah Pusat <i>Centroid</i> baru. 
-                    </p>
+                        <a>
+                            Tentukan posisi pusat <i>cluster (Centroid)</i> baru (k), jika pusat <i>cluster</i> 
+                            tidak berubah, maka proses <i>cluster</i> telah selesai. Jika belum, maka ulang langkah 
+                            keempat sampai pusat <i>cluster (Centroid)</i> tidak berubah lagi. 
+                        </a>
                         <!--tabel pusat centroid baru-->
                         <div class="table-responsive">
                             <table class="table">
@@ -382,13 +385,13 @@
                                     </tbody>
                             </table>
                         </div>
-                    <p>
-                        Dari tabel di bawah ini, dapat dilihat bahwa iterasi pertama dan kedua memiliki kelompok 
-                        data yang sama, maka dari itu proses dinyatakan selesai. Berdasarkan 5 responden di 
-                        dapatkan hasil yaitu pada kategori C1 (Berminat) terdapat 1 responden, kategori C2 
-                        (Cukup Berminat) terdapat 2 responden, dan kategori C3 (Tidak Berminat) terdapat 2 
-                        responden. 
-                    </p>
+                        <p>
+                            Dari tabel di bawah ini, dapat dilihat bahwa iterasi pertama dan kedua memiliki kelompok 
+                            data yang sama, maka dari itu proses dinyatakan selesai. Berdasarkan 5 responden di 
+                            dapatkan hasil yaitu pada kategori C1 (Berminat) terdapat 1 responden, kategori C2 
+                            (Cukup Berminat) terdapat 2 responden, dan kategori C3 (Tidak Berminat) terdapat 2 
+                            responden. 
+                        </p>
                         <!--tabel iterasi kedua-->
                         <div class="table-responsive">
                             <table class="table">
@@ -450,10 +453,20 @@
                                     </tbody>
                             </table>
                         </div>
+                    </li>
                 </ol>
             </p>
-            
-            <!--Naive Bayes-->
+        </div>
+    </div>
+</div>
+
+<!--Metode Naive Bayes-->
+<div class="container-fluid m-0 p-5 row" style="background-color: #EFEEF4;">
+    <div class="col-sm-12 float-left">
+        <div>
+            <h2 class="text-dark">Naive Bayes</h2>
+        </div>
+        <div class="pt-3">
             <p class="text-dark" style="text-align:justify">
                 Setelah didapatkan hasil penentuan kelas dengan menggunakan metode K-Means Clustering, 
                 maka tahap selanjutnya adalah melakukan klasifikasi dengan menggunakan metode Naive 
@@ -522,69 +535,79 @@
             <ol>
                 <!--Step 1-->
                 <li>
-                     Menghitung jumlah kelas pada data training
+                    <a>Menghitung jumlah kelas pada data training</a>
+                    <p>
+                        Hitung jumlah sampel atau kelas yang muncul ditambah 1, kemudian dibagi 
+                        dengan jumlah seluruh sampe atau kelas yang ditambah jumlah kategori atau 
+                        kelas. Hal ini dilakukan sehingga bisa menghidari kasus nilai probabilitas 0 (nol). <br/>
+                        <img src="images/perhitungan/1 naive bayes.PNG" class="w-10" />
+                    </p>
                 </li>
-                <p>
-                    Hitung jumlah sampel atau kelas yang muncul ditambah 1, kemudian dibagi 
-                    dengan jumlah seluruh sampe atau kelas yang ditambah jumlah kategori atau 
-                    kelas. Hal ini dilakukan sehingga bisa menghidari kasus nilai probabilitas 0 (nol).
-                </p>
-                <img src="images/perhitungan/1 naive bayes.PNG" class="w-10" />
 
                 <!--Step 2-->
                 <li>
-                    Menghitung jumlah kasus yang sama dengan kelas yang sama pada data testing
+                    <a>Menghitung jumlah kasus yang sama dengan kelas yang sama pada data testing</a>
+                    <p>
+                        Hitung jumlah sampel atau kelas yang sama ditambah 1, kemudian dibagi dengan jumlah seluruh 
+                        sampel atau kelas c yang muncul yang ditambah jumlah atribut yang ada. <br/>
+                        <img src="images/perhitungan/2.1 naive bayes.PNG" style="width:33%" />
+                        <img src="images/perhitungan/2.2 naive bayes.PNG" style="width:33%" />
+                        <img src="images/perhitungan/2.3 naive bayes.PNG" style="width:33%" /> 
+                        <p></p>
+                        <img src="images/perhitungan/2.4 naive bayes.PNG" style="width:33%" />
+                        <img src="images/perhitungan/2.5 naive bayes.PNG" style="width:33%" />
+                        <img src="images/perhitungan/2.6 naive bayes.PNG" style="width:33%" />
+                        <p></p>
+                        <img src="images/perhitungan/2.7 naive bayes.PNG" style="width:33%" />
+                    </p>
                 </li>
-                <p>
-                    Hitung jumlah sampel atau kelas yang sama ditambah 1, kemudian dibagi dengan jumlah seluruh 
-                    sampel atau kelas c yang muncul yang ditambah jumlah atribut yang ada. 
-                </p>
-                <img src="images/perhitungan/2.1 naive bayes.PNG" style="width:33%" />
-                <img src="images/perhitungan/2.2 naive bayes.PNG" style="width:33%" />
-                <img src="images/perhitungan/2.3 naive bayes.PNG" style="width:33%" /> 
-                <p></p>
-                <img src="images/perhitungan/2.4 naive bayes.PNG" style="width:33%" />
-                <img src="images/perhitungan/2.5 naive bayes.PNG" style="width:33%" />
-                <img src="images/perhitungan/2.6 naive bayes.PNG" style="width:33%" />
-                <p></p>
-                <img src="images/perhitungan/2.7 naive bayes.PNG" style="width:33%" />
 
                 <!--Step 3-->
                 <li>
-                    Mengalikan semua hasil sesuai dengan data testing
+                    <a>Mengalikan semua hasil sesuai dengan data testing</a>
+                    <p>
+                        Pada tahap ini, diperlukan untuk mengalikan semua hasil dari tahap 2 sesuai dengan kelasnya 
+                        masing-masing. <br/> 
+                        <img src="images/perhitungan/3.2 naive bayes.PNG" class="w-10" />
+                    </p>
+                    <p>
+                        Setelah mengalikan semua hasil pada tahap 2 sesuai dengan kelasnya, selanjutnya mengalikan 
+                        dengan hasil pada tahap 1. <br/> 
+                        <img src="images/perhitungan/3.2 naive bayes.PNG" class="w-10" />
+                    </p>
                 </li>
-                <p>
-                    Pada tahap ini, diperlukan untuk mengalikan semua hasil dari tahap 2 sesuai dengan kelasnya 
-                    masing-masing. 
-                </p>
-                <img src="images/perhitungan/3.2 naive bayes.PNG" class="w-10" />
-                <p>
-                    Setelah mengalikan semua hasil pada tahap 2 sesuai dengan kelasnya, selanjutnya mengalikan 
-                    dengan hasil pada tahap 1. 
-                </p>
-                <img src="images/perhitungan/3.2 naive bayes.PNG" class="w-10" />
 
                 <!--Step 4-->
                 <li>
-                    Membandingkan hasil per kelas
+                    <a>Membandingkan hasil per kelas</a>
+                    <p>
+                        Setelah dilakukan perhitungan pada tahap 1 sampai 3, pada tahap ini yang perlu dilakukan 
+                        adalah membandingkan hasil pada tahap 3. Maka dapat disimpulkan bahwa probabilitas 
+                        Minat Membaca Berita pada responden pertama adalah <b>Berminat</b>. 
+                    </p>
                 </li>
-                <p>
-                    Setelah dilakukan perhitungan pada tahap 1 sampai 3, pada tahap ini yang perlu dilakukan 
-                    adalah membandingkan hasil pada tahap 3. Maka dapat disimpulkan bahwa probabilitas 
-                    Minat Membaca Berita pada responden pertama adalah Berminat. 
-                </p>
-
-                <p>
-                    Dan dilakukan kembali tahap 1 sampai dengan tahap 4 untuk responden kedua pada data 
-                    testing dan hasilnya adalah Tidak Berminat. 
-                </p>
-                <img src="images/perhitungan/3.2 responden 2 naive bayes.PNG" class="w-10" />
-                <p>
-                    Berdasarkan hasil perhitungan dengan metode K-Means Clustering dan Naive Bayes, maka 
-                    dapat dihitung besaran Minat Membaca Berita. 
-                </p>
-                <img src="images/perhitungan/Persentase akhir.PNG" class="w-10" />
             </ol>
+            <p class="pt-3">
+                Dan dilakukan kembali tahap 1 sampai dengan tahap 4 untuk responden kedua pada data 
+                testing dan hasilnya adalah <b>Tidak Berminat</b>. <br/>  
+                <img src="images/perhitungan/3.2 responden 2 naive bayes.PNG" class="w-10" />
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--Hasil Akhir-->
+<div class="container-fluid m-0 p-5 row">
+    <div class="col-sm-12 float-left">
+        <div class="pt-4">
+            <h2 class="text-dark">Hasil Akhir</h2>
+        </div>
+        <div class="pt-3">
+            <p>
+                Berdasarkan hasil perhitungan dengan metode K-Means Clustering dan Naive Bayes, maka 
+                dapat dihitung besaran Minat Membaca Berita. <br/>  
+                <img src="images/perhitungan/Persentase akhir.PNG" class="w-10" />
+            </p>
         </div>
     </div>
 </div>
