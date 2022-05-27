@@ -25,7 +25,7 @@
             <h2 class="text-dark">Apa Metode yang Digunakan ?</h2>
         </div>
         <div class="pt-3">
-            <p class="text-dark" style="text-align:justify">
+            <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Metode yang digunakan adalah metode K-Means Clustering dan Naive Bayes. Metode
                 K-Means Clustering adalah metode clustering yang paling umum dan sederhana, hal
                 ini disebabkan K-Means mempunyai kemampuan mengelompokkan dan memetakan data
@@ -52,7 +52,7 @@
             <h2 class="text-dark">Contoh Perhitungan</h2>
         </div>
         <div class="pt-3">
-            <p class="text-dark" style="text-align:justify">
+            <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Data yang akan digunakan pada perhitungan akan di bagi menjadi 2, yaitu 5 data training dan 2 data testing. Sebelum kita masuk ke dalam contoh perhitungannya, tabel di bawah ini adalah keterangan 
                 dataset pada kuisioner berdasarkan indikator yang digunakan. 
                 <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseKeterangan" role="button" aria-expanded="false" aria-controls="collapseKeterangan">
@@ -87,7 +87,7 @@
     <!--Part 2-->
     <div class="col-sm-12 float-left">
         <div class="pt-3">
-            <p class="text-dark" style="text-align:justify">
+            <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Data di bawah ini adalah contoh dataset kuisioner yang akan digunakan sebagai data testing 
                 pada contoh perhitungan ini. P1 sampai P18 merupakan pernyataan pada tabel di atas ini, 
                 sedangkan R1 sampai R5 merupakan seluruh responden pada kuisioner pada data testing ini. 
@@ -156,7 +156,7 @@
             <h2 class="text-dark">K-Means Clustering</h2>
         </div>
         <div class="pt-3">
-            <p class="text-dark" style="text-align:justify">
+            <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Proses pertama yang dilakukan pada penelitian ini adalah melakukan penentuan 
                 kelas dengan menggunakan K-Means Clustering. Kemudian setelah di dapatkan 
                 kelas pada responden data training maka selanjutnya dapat dilakukan klasifikasi 
@@ -164,9 +164,9 @@
                 testing masuk ke dalam kelas mana. Setelah didapatkan hasil kelas pada keseluruhan 
                 responden maka dapat dihitung seberapa besar Minat Anak Muda dalam Membaca Berita.   
             </p>
-            <p class="text-dark" style="text-align:justify">
+            <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Berikut adalah tahapan pada metode K-Means Clustering :  
-                <ol>
+                <ol style="font-size:1.5vw">
                     <!--Step 1-->
                     <li class="pb-3">
                         Memasukkan data yang akan dikelompokkan <i>(clustering)</i>
@@ -467,7 +467,7 @@
             <h2 class="text-dark">Naive Bayes</h2>
         </div>
         <div class="pt-3">
-            <p class="text-dark" style="text-align:justify">
+            <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Setelah didapatkan hasil penentuan kelas dengan menggunakan metode K-Means Clustering, 
                 maka tahap selanjutnya adalah melakukan klasifikasi dengan menggunakan metode Naive 
                 Bayes pada data testing. Terdaoat data testing yang berisi 2 orang responden yang dapat 
@@ -526,13 +526,13 @@
                     </tbody>
                 </table>
             </div>
-            <p class="text-dark" style="text-align:justify">
+            <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Berdasarkan data testing di atas, perlu ditentukan apakah kedua orang tersebut masuk ke 
                 dalam kategori Berminat, Cukup Berminat atau Tidak Berminat dalam membaca berita dengan 
                 menggunakan metode Naive Bayes. berikut adalah tahap perhitungan menggunakan metode 
                 Naive Bayes:
             </p>
-            <ol>
+            <ol style="font-size:1.5vw">
                 <!--Step 1-->
                 <li>
                     <a>Menghitung jumlah kelas pada data training</a>
@@ -587,7 +587,7 @@
                     </p>
                 </li>
             </ol>
-            <p class="pt-3">
+            <p class="pt-3" style="font-size:1.5vw">
                 Dan dilakukan kembali tahap 1 sampai dengan tahap 4 untuk responden kedua pada data 
                 testing dan hasilnya adalah <b>Tidak Berminat</b>. <br/>  
                 <img src="images/perhitungan/3.2 responden 2 naive bayes.PNG" class="w-10" />
@@ -603,7 +603,7 @@
             <h2 class="text-dark">Hasil Akhir</h2>
         </div>
         <div class="pt-3">
-            <p>
+            <p style="font-size:1.5vw">
                 Berdasarkan hasil perhitungan dengan metode K-Means Clustering dan Naive Bayes, maka 
                 dapat dihitung besaran Minat Membaca Berita. <br/>  
                 <img src="images/perhitungan/Persentase akhir.PNG" class="w-10" />
