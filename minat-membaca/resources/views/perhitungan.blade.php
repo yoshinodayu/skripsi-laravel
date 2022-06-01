@@ -160,7 +160,7 @@
                 Proses pertama yang dilakukan pada penelitian ini adalah melakukan penentuan 
                 kelas dengan menggunakan K-Means Clustering. Kemudian setelah di dapatkan 
                 kelas pada responden data training maka selanjutnya dapat dilakukan klasifikasi 
-                dengan menggunakan metode Naive Bayes untuk menentukan apakah responden pada dataset 
+                dengan menggunakan metode Naive Bayes untuk menentukan apakah responden pada data 
                 testing masuk ke dalam kelas mana. Setelah didapatkan hasil kelas pada keseluruhan 
                 responden maka dapat dihitung seberapa besar Minat Anak Muda dalam Membaca Berita.   
             </p>
@@ -316,10 +316,10 @@
 
                     <!--Step 5-->
                     <li>
-                        <a>Kelompokan setiap data berdasarkan jarak terdekat antara data dengan <i>centroid</i>nya</a>
+                        <a>Kelompokan setiap data berdasarkan jarak terdekat antara data dengan <i>centroid</i>-nya</a>
                         <p>
                             Pada tahap ini, dilakukan perbandingan antara C1, C2, dan C3. Dari semua perhitungan 
-                            manakah yang memiliki angka lebih kecl itulah jarak terdekatnya. bandingkan hal ini 
+                            manakah yang memiliki angka lebih kecil itulah jarak terdekatnya. Bandingkan hal ini 
                             pada semua responden yang telah dihitung sebelumnya. Jika dilihat pada data di atas, 
                             di dapatkan kelompok data yaitu C1 (R1), C2 (R2, R3), dan C3 (R4, R5).
                         </p>
@@ -470,7 +470,7 @@
             <p class="text-dark" style="text-align:justify; font-size:1.5vw">
                 Setelah didapatkan hasil penentuan kelas dengan menggunakan metode K-Means Clustering, 
                 maka tahap selanjutnya adalah melakukan klasifikasi dengan menggunakan metode Naive 
-                Bayes pada data testing. Terdaoat data testing yang berisi 2 orang responden yang dapat 
+                Bayes pada data testing. Terdapat data testing yang berisi 2 orang responden yang dapat 
                 dilihat pada tabel di bawah ini. 
             </p>
             <!--tabel dataset2 (data testing)-->
@@ -538,7 +538,7 @@
                     <a>Menghitung jumlah kelas pada data training</a>
                     <p>
                         Hitung jumlah sampel atau kelas yang muncul ditambah 1, kemudian dibagi 
-                        dengan jumlah seluruh sampe atau kelas yang ditambah jumlah kategori atau 
+                        dengan jumlah seluruh sampai atau kelas yang ditambah jumlah kategori atau 
                         kelas. Hal ini dilakukan sehingga bisa menghidari kasus nilai probabilitas 0 (nol). <br/>
                         <img src="images/perhitungan/1 naive bayes.PNG" class="w-10" />
                     </p>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Controller\IndikatorController;
 use App\Http\Controllers\PerhitunganController;
 use App\Http\Controllers\HasilController;
+use App\Http\Controllers\KuisionerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +23,8 @@ Route::get('/beranda', function () {
     ]);
 });
 
-Route::get('/kuisioner', function () {
-    return view('kuisioner', [
-        "title" => "Kuisioner"
-    ]);
-});
+Route::get('/kuisioner', [KuisionerController::class, 'index']);
+Route::post('/kuisioner', [KuisionerController::class, 'store']);
 
 Route::get('/perhitungan', [PerhitunganController::class, 'index']);
 Route::get('/hasil', [HasilController::class, 'index']);

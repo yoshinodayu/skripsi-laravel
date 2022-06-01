@@ -13,15 +13,13 @@
         </div>
         <div class="pt-3">
             <p class="text-dark" style="text-align:justify; font-size:1.5vw">
-                Berdasarkan studi dari “Most Littered Nation In The World” yang dilakukan oleh Central Connecticut State University pada tahun 2016,
-                Indonesia menempati peringkat ke-60 dari 61 negara mengenai minat membaca. Padahal setiap harinya, berita bisa ditemukan di televisi, di
-                koran atau majalah, di radio bahkan di media online dan berita disajikan dalam bentuk tulisan, gambar, suara, atau pun video dan suara.
-                Juga menurut hasil riset “Studi konsumsi Media Online” yang dilakukan oleh Asosiasi Digital Indonesia (IDA) bersama Baidu dan Badan Ekonomi
-                Kreatif (Bekraf) mengatakan bahwa pembaca berita online didominasi kelompok usia 33 sampai 42 tahun. Dari hal ini dapat dilihat bahwa minat
-                anak muda dalam membaca berita kurang. Dari hal ini perlu diketahui seberapa besar minat anak muda dalam membaca berita dan berita seperti
-                apa yang lebih disukai.
+                Berdasarkan hasil riset “Studi konsumsi Media Online” yang dilakukan oleh Asosiasi Digital Indonesia (IDA) bersama Baidu dan Badan Ekonomi
+                Kreatif (Bekraf) mengatakan bahwa pembaca berita online didominasi kelompok usia 33 sampai 42 tahun. Padahal setiap harinya, berita dapat 
+                ditemukan di televisi, di koran atau majalah, di radio bahkan di media online dan berita disajikan dalam bentuk tulisan, gambar, suara, atau 
+                pun video dan suara. Dari hal ini dapat dilihat bahwa minat anak muda dalam membaca berita kurang. Dari hal ini perlu diketahui seberapa 
+                besar minat anak muda dalam membaca berita dan berita seperti apa yang lebih disukai.
             </p>
-            <a href="/kuisioner" style="font-size:1.5vw; text-decoration:none;">Isi Kuisioner</a>
+            <a href="/kuisioner" style="font-size:1.5vw; text-decoration:none;">Isi Kuisioner Disini!</a>
         </div>
     </div>
 </div>
@@ -34,13 +32,12 @@
         </div>
         <div class="pt-3">
             <p class="text-dark" style="text-align:justify; font-size:1.5vw">
-                Sebelum kita masuk ke dalam penjelasan mengenai penelitian ini, perlu kita ketahui terlebih dahulu apa itu berita. Menurut Mickhel V Charniey,
-                “berita adalah laporan tercepat dari suatu peristiwa atau kejadian yang faktual, penting, dan menarik bagi sebagian pembaca serta menyangkut
-                kepentingan mereka”. Berdasarkan cara penyampaiannya, berita dibagi menjadi dua jenis, yakni berita disampaikan secara lisan dan secara
-                tertulis. Biasanya berita yang disampaikan secara lisan dapat dilihat di televisi atau di internet, dan berita yang disampaikan secara
-                tertulis biasanya dapat dilihat melalui media cetak seperti koran dan dapat juga dilihat di internet. Topik umum untuk laporan berita
-                meliputi perang, pemerintah, politik, pendidikan, kesehatan, lingkungan, ekonomi, bisnis, mode, hiburan, olahraga, dan acara unik atau tidak
-                biasa.
+                Menurut Mickhel V Charniey, “berita adalah laporan tercepat dari suatu peristiwa atau kejadian yang faktual, penting, dan menarik 
+                bagi sebagian pembaca serta menyangkut kepentingan mereka”. Berdasarkan cara penyampaiannya, berita dibagi menjadi dua jenis, yakni 
+                berita disampaikan secara lisan dan secara tertulis. Biasanya berita yang disampaikan secara lisan dapat dilihat di televisi atau di 
+                internet, dan berita yang disampaikan secara tertulis biasanya dapat dilihat melalui media cetak seperti koran dan dapat juga dilihat 
+                di internet. Topik umum untuk laporan berita meliputi perang, pemerintah, politik, pendidikan, kesehatan, lingkungan, ekonomi, bisnis, 
+                mode, hiburan, olahraga, dan acara unik atau tidak biasa.
             </p>
         </div>
     </div>
@@ -98,7 +95,7 @@
                         Penelitian menunjukan bahwa lansia yang membaca berita memiliki peluang 17% lebih 
                         rendah dalam proses penuaan. Saat membaca berita, sering kali memicu beberapa 
                         respons, termasuk ingatan dan emosi yang kuat dari otak. Stimulasi mental apa pun 
-                        dapat memperlambat otak yang menua. Setiap kali mempelajari sesuati yang baru, 
+                        dapat memperlambat otak yang menua. Setiap kali mempelajari sesuatu yang baru, 
                         itu membantu otak manusia agar tetap fit. 
                     </p>
                 </li>
